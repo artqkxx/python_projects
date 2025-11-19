@@ -1,0 +1,120 @@
+/* Скидання відступів браузера */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+ 
+body {
+    background: #111;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+ 
+/* Основний блок сайту */
+.container {
+    max-width: 480px;
+    width: 100%;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+ 
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+ 
+/* Картинка */
+.preview-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+ 
+/* Опис */
+.description {
+    margin-bottom: 16px;
+}
+ 
+/* Кнопка старту */
+#startBtn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #00c853;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: transform 0.1s, opacity 0.1s;
+}
+ 
+#startBtn:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+ 
+/* Рахунок */
+.score {
+    text-align: center;
+    margin-bottom: 10px;
+}
+ 
+/* Обгортка для гри */
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+/* Канвас з грою */
+#game {
+    border: 2px solid #333;
+    background: #000;
+    border-radius: 4px;
+    /* На телефоні канвас підлаштується по ширині */
+    width: 100%;
+    max-width: 320px;
+    /* Щоб пікселі були більш “квадратні” */
+    image-rendering: pixelated;
+    margin-bottom: 12px;
+}
+ 
+/* Кнопки для телефона */
+.mobile-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+ 
+.mobile-controls button {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: #333;
+    color: #f5f5f5;
+}
+ 
+.left-right {
+    display: flex;
+    gap: 8px;
+}
+ 
+/* На великих екранах (ПК) можна сховати мобільні кнопки, якщо хочеш */
+@media (min-width: 768px) {
+    .mobile-controls {
+        display: none;
+    }
+}
