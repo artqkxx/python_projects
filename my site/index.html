@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<!-- Робить сайт адаптивним під телефон -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Змійка в браузері</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h1>Гра "Змійка"</h1>
+ 
+        <!-- Фото. Можеш потім замінити src на іншу картинку -->
+<img 
+            src="https://upload.wikimedia.org/wikipedia/commons/0/05/Snake_game.png" 
+            alt="Зображення гри Змійка" 
+            class="preview-image"
+        />
+ 
+        <!-- Короткий опис -->
+<p class="description">
+            Це проста браузерна гра "Змійка". 
+            Натисни кнопку нижче, щоб почати гру, 
+            керуй змійкою стрілками на клавіатурі або кнопками на екрані телефону.
+</p>
+ 
+        <!-- Кнопка старту -->
+<button id="startBtn">▶️ Почати гру</button>
+ 
+        <!-- Рахунок -->
+<p class="score">
+            Рахунок: <span id="score">0</span>
+</p>
+ 
+        <!-- Блок з грою -->
+<div class="game-wrapper">
+<!-- Поле гри -->
+<canvas id="game" width="320" height="320"></canvas>
+ 
+            <!-- Кнопки керування для телефону -->
+<div class="mobile-controls">
+<button data-dir="up">▲</button>
+<div class="left-right">
+<button data-dir="left">◀</button>
+<button data-dir="right">▶</button>
+</div>
+<button data-dir="down">▼</button>
+</div>
+</div>
+</div>
+ 
+    <!-- Підключаємо JS -->
+<script src="script.js"></script>
+</body>
+</html>
