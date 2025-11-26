@@ -12,7 +12,7 @@ import transliterate
 #  Налаштування
 # =========================
 BOT_TOKEN = "8064796302:AAGm10B85J4kwTCr1mCK7nz935Dj4zbmZYA"
-OPENWEATHER_KEY = "2bd3e8eabd32eee414ca64e698010ab7"
+
 
 # =========================
 #  /start
