@@ -9,3 +9,5 @@ press_return = True
 root = tk.Tk()
 root.title("Game")
 root.geometry("600x600+750+400")
+
+root.iconbitmap("")
