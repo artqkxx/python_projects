@@ -26,3 +26,4 @@ class Teacher:
         if not self.students:
             print("Учнів немає")
             return
+
