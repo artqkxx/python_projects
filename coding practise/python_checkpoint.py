@@ -33,6 +33,7 @@ login_pattern = re.compile(r"^\+380\d{9}$")
 password_pattern = re.compile(r"^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#%^&*?]).{6,20}$")
 
 root = tk.Tk()
+root.title("Yakivchykgram")
 root.iconbitmap("img/1.ico")
 root.geometry("600x400")
 root.resizable(False, False)
